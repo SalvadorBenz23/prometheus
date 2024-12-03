@@ -7,3 +7,5 @@ prometheus/*
 node_modules/
 __pycache__/
 apps/python_app/venv/
+consoles/*
+console_libraries/*

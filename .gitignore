@@ -1,0 +1,9 @@
+exporters/*
+alertmanager/*
+prometheus/*
+*.log
+*.tar.gz
+*.pyc
+node_modules/
+__pycache__/
+

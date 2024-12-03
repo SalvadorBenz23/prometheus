@@ -1,0 +1,27 @@
+groups:
+  - name: monitoring_group
+    rules:
+      - alert: PythonAppDown
+        expr: up{job="python_app"} == 0
+        labels:
+          severity: operation
+        annotations:
+          summary: "Our Python App is down"
+      - alert: MySQLDown
+        expr: up{job="mysql_exporter"} == 0
+        labels:
+          severity: operation
+        annotations:
+          summary: "Our MySQL Server is down"
+      - alert: PrometheusDown
+        expr: up{job="prometheus"} == 0
+        labels:
+          severity: operation
+        annotations:
+          summary: "Our Prometheus Server is down"
+      - alert: NodeDown
+        expr: up{job="node"} == 0
+        labels:
+          severity: critical
+        annotations:
+          summary: "The server is down"

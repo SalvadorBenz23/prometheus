@@ -6,4 +6,4 @@ prometheus/*
 *.pyc
 node_modules/
 __pycache__/
-
+apps/python_app/venv/
